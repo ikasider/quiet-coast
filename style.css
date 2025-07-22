@@ -1,0 +1,330 @@
+     /* Основные глобальные стили */
+@import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bellota:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Neucha&display=swap');
+
+body {
+    font-family: 'Neucha', cursive;
+    margin: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* Шапка и подвал */
+header, footer {
+    background-color: #2c3e50;
+    padding: 30px 20px;
+    text-align: center;
+    color: white;
+}
+
+header p {
+    font-family: 'Bellota', cursive;
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Навигация */
+nav {
+    background-color: #34495e;
+    padding: 1em 0;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0 15px;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #18bc9c;
+}
+
+.auth-button {
+    font-size: 24px;
+    cursor: pointer;
+    background: #ffffff;
+    border: none;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    margin-top: 25px;
+    margin-right: 4px;
+    border-radius: 10px;
+    position: absolute;
+}
+
+.auth-form {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+}
+
+.auth-form.hidden {
+    display: none;
+}
+
+.form-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.form-header h2 {
+    margin: 0;
+    font-size: 20px;
+    color: #333;
+    font-family: Bellota;
+}
+
+.close-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #888;
+    font-size: 20px;
+}
+
+#loginForm label {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 5px;
+    display: block;
+    font-family: Bellota;
+}
+
+#loginForm input[type="text"],
+#loginForm input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+.loginButton {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #007bff; /* как у тебя */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.loginButton:hover {
+    background-color: #0056b3;
+}
+
+/* Секции с фоновыми изображениями (ваши оригинальные URL) */
+#tihiy {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://avatars.mds.yandex.net/get-altay/6314780/2a000001891a65a69ff5b1a9a8e4e8ec6332/orig');
+    background-position: 50% 70%;
+}
+
+#pirs {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://avatars.mds.yandex.net/get-mpic/4887838/2a0000018fefba009c281e5e28daa6cca3d9/orig');
+    background-position: 50% 90%;
+}
+
+#bbq {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://yandex-images.clstorage.net/5qQd0g232/3cc0bcRp2p/gNviuIBr9Q3ah4VL2avEaaj45_fMMOvsrKo6-2QCGjHNgz18vgDkFOldgLam6Z1EqYfhLS1Dc10xYrRtc0SK-c6Ooe_BNbIN35POQZWxyHm9tPq02XLy6KvzNq4PbmsS6uUTGZJ1mmmjXYvmoqTQA7nt2D8rQTo9AlbcRksRxq2uyNuugX6SKu688nf_q_dNsr_45_ZXy5SUh2jLNlliN-vyOyKqZZx_n1us2rOzrjqmyux6PX0gLilt5XZcB9OjmfHAmrFsuA39gO5cwrHZSZSb0dbRV9WDqppT7wBVTwTe6iQui3qjbKJNrdKqvrQ4puvieipIKB4yV8Z5TxDZkJr4_Kq3cLUW57rJReyT6H6mgtrA90Xpu6Cjc_YDZk0m4cstCLl4kFeJVpL1lpKfC7TmwnYnVAcCJGT8dE8Ixaqd38C9pGyDDN2B_VThjOFPgZXe991T-5-DmE3sBGdrEfD0Ni2VZKFFq1qd1LW9thmm_cRXAHQmJydo51BeEMi4mPv-uLNfkQnfu99U6o_5dZ6d-tr3bO6epKxL5SFabz_a3DUflGKBUbRTnfSMhKgbisbBcwFCExoKceh4fCboqaHi5pOocIkV76LqQM6V5UqCoc73yEXRl7KEQ_sXSFkQ2O06KpNHsWCbbqfSoIqQH4v76lUbQz0YAVHVfHQ52Ymg9MO3omCZJPqk7kLLlspjuIHg_9FTwLKAm3XVBnJeBuDqHwaWdoZSqnmq9a22mQWK09R5Fk0dNgVC0kN6PcCPvMr3j6hVlAfnuuNV3rb1VYKV-eDad_G_jYRu3ilebyXn_SUfk1GJU7tav--DrZQJlfzzUhR1GT0FUPVjfQbWqoLM2o2Da7En7LDkVNCD9Fi_geHz0VD7vqqPcdw4d34g6_gPApZbuWyARoHMt5G8OJr7wlQ4aSQ4IGP2S0ww4I6-3vieu3y-JdqEwnPxtOJBvp3Y3O130ZatlkDpNHo');
+    background-position: center;
+}
+
+#spa {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/43/64/ec/4364ec84-6ec2-d7c8-fa59-16a5536b16ce/5904195134623.jpg/800x800cc.jpg');
+    background-position: 50% 40%;
+}
+
+#kids {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://avatars.mds.yandex.net/get-altay/9663145/2a0000018a2befa745ca7afa93dd52678718/XXL_height');
+    background-position: 50% 40%;
+}
+
+#forrm {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://optim.tildacdn.com/tild6637-6431-4163-b766-326362383562/-/format/webp/1G1A8436.jpg.webp');
+    background-position: 50%;
+}
+
+#dayyy {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://optim.tildacdn.com/tild6631-3535-4130-a137-306433663533/-/format/webp/DSC06766_resized.jpg.webp');
+}
+
+/* Общие стили для всех секций с фоновыми изображениями */
+#tihiy, #pirs, #bbq, #spa, #kids, #forrm, #dayyy {
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+    padding: 40px 20px;
+    position: relative;
+}
+
+#tihiy h1 {
+    color: white;
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+}
+
+/* Карточки удобств */
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px 0;
+}
+.featureszz {
+    width: 280px;
+    min-height: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.featureszz:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.features h3 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.features p {
+    font-family: 'Bellota', cursive;
+    font-size: 1.1em;
+    line-height: 1.5;
+}
+
+/* Расписание */
+.schedule-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px 0;
+}
+
+.day {
+    flex: 1 1 300px;
+    max-width: 350px;
+    background-color: rgba(255,255,255,0.9);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.day:hover {
+    transform: scale(1.03);
+}
+
+.day h3 {
+    color: #2c3e50;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #18bc9c;
+    padding-bottom: 5px;
+}
+
+.day p {
+    color: #34495e;
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+/* Форма бронирования */
+.form {
+    background-color: rgba(255,255,255,0.9);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    max-width: 600px;
+    margin: 30px auto;
+}
+
+.form h2 {
+    color: #2c3e50;
+    margin-bottom: 25px;
+}
+
+.form input, .form select {
+    background-color: rgba(255,255,255,0.8);
+    border: 1px solid #ddd;
+    transition: border-color 0.3s;
+}
+
+.form input:focus, .form select:focus {
+    border-color: #18bc9c;
+    outline: none;
+}
+
+.form input[type="submit"] {
+    background-color: #18bc9c;
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.form input[type="submit"]:hover {
+    background-color: #128f76;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .featureszz {
+        width: 100%;
+        max-width: 350px;
+    }
+    
+    .schedule-container {
+        flex-direction: column;
+    }
+    
+    .day {
+        max-width: 100%;
+    }
+    
+    nav a {
+        display: block;
+        padding: 10px 0;
+    }
+}
+
+.discount {
+    background-color: #34495e;
+    padding: 10px;
+    text-align: center;
+    margin: 20px auto;
+    border-radius: 8px;
+    max-width: 600px;
+    color: white;
+}
